@@ -1,0 +1,16 @@
+<div *ngFor="let mission of missions">
+    <div class="mission-card">
+      <div class="mission-header">
+        <img *ngIf="mission?.links?.mission_patch_small" [src]="mission.links.mission_patch_small" alt="Mission Patch">
+        <div class="mission-info">
+          <h3>{{ mission?.mission_name }}</h3>
+          <p><strong>Launch Year:</strong> {{ mission?.launch_year }}</p>
+        </div>
+      </div>
+      <div class="mission-details">
+        <p>{{ mission?.details }}</p>
+      </div>
+    </div>
+</div>
+
+  
