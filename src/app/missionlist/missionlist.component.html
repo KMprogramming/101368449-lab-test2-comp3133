@@ -1,0 +1,18 @@
+<div class="mission-list">
+    <h2>Mission List</h2>
+    <div class="filter">
+        <button (click)="navigateToFilterMissions()">Filter Missions</button>
+    </div>
+    <div class="launches">
+        <div *ngFor="let launch of filteredLaunches" class="mission" [routerLink]="['/missions', launch.flight_number]">
+            <div class="launch">
+                <img [src]="launch.links.mission_patch_small" alt="Mission Patch">
+                <h3>{{ launch.mission_name }}</h3>
+                <p><strong>Launch Year:</strong> {{ launch.launch_year }}</p>
+                <p><strong>Details:</strong> {{ launch.details }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+

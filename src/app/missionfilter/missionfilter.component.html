@@ -1,0 +1,39 @@
+<div class="mission-list-button" (click)="navigateToMissionList()">Mission List</div>
+
+<div class="mission-filter">
+
+    <h2>Mission Filter</h2>
+
+    <div class="filter-by-year">
+      <h3>Filter by Year</h3>
+      <div class="filter-buttons">
+        <button *ngFor="let year of years" (click)="filterMissionsByYear(year)" [class.active]="selectedYear === year">{{ year }}</button>
+      </div>
+    </div>
+  
+    <div class="filter-by-success">
+      <h3>Filter by Success</h3>
+      <div class="filter-buttons">
+        <button (click)="filterMissionsBySuccess(true)" [class.active]="isSuccessFilterActive === true">Successful</button>
+        <button (click)="filterMissionsBySuccess(false)" [class.active]="isSuccessFilterActive === false">Failed</button>
+        <button (click)="filterMissionsBySuccess(null)" [class.active]="isSuccessFilterActive === null && !isYearFilterActive">All</button>
+      </div>
+    </div>
+  
+    <div class="navigate-to-details">
+      <h3>Navigate to Mission Details</h3>
+      <div class="details-container">
+        <div *ngFor="let mission of filteredMissions" class="mission-container" (click)="navigateToMissionDetails(mission.flight_number)">
+          <img [src]="mission.links.mission_patch_small" alt="Mission Patch">
+          <h4>{{ mission.mission_name }}</h4>
+          <p><strong>Launch Year:</strong> {{ mission.launch_year }}</p>
+          <p><strong>Launch Success:</strong> {{ mission.launch_success ? 'Successful' : 'Failed' }}</p>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Mission list button -->
+  </div>
+  
+  
+

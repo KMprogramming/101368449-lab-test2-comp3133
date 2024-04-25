@@ -1,0 +1,54 @@
+
+.mission-list {
+    margin: 20px;
+}
+
+
+.filter {
+    margin-bottom: 10px;
+}
+
+
+.launches {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+
+.mission {
+    border: 1px solid #121311;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: rgba(40, 157, 95, 0.5); 
+    cursor: pointer;
+    transition: background-color 0.3s; 
+}
+
+
+.mission:hover {
+    background-color: rgba(40, 157, 95, 0.7); 
+}
+
+
+.launch img {
+    max-width: 100%;
+    height: auto;
+}
+
+.launch h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #ea0707;
+}
+
+.launch p {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #090909;
+}
+
+.launch strong {
+    font-weight: bold;
+    color: #3112df;
+}

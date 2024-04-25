@@ -1,0 +1,27 @@
+
+
+<div class="mission-details" *ngIf="mission">
+    <h2>Mission Details</h2>
+    <button (click)="navigateBack()">Back to Mission List</button>
+
+    <div class="details">
+        <div class="mission-patch" *ngIf="mission!.links!.mission_patch_small">
+            <img [src]="mission!.links!.mission_patch_small" alt="Mission Patch">
+        </div>
+        <p><strong>Mission Name:</strong> {{ mission!.mission_name }}</p>
+        <p><strong>Flight Number:</strong> {{ mission!.flight_number }}</p>
+        <p><strong>Launch Year:</strong> {{ mission!.launch_year }}</p>
+        <p><strong>Details:</strong> {{ mission!.details }}</p>
+        <div class="rocket-details" *ngIf="mission!.rocket">
+            <h3>Rocket Details</h3>
+            <p><strong>Rocket Name:</strong> {{ mission!.rocket!.rocket_name }}</p>
+            <p><strong>Rocket Type:</strong> {{ mission!.rocket!.rocket_type }}</p>
+        </div>
+        <div class="launch-site-details" *ngIf="mission!.launch_site">
+            <h3>Launch Site Details</h3>
+            <p><strong>Site ID:</strong> {{ mission!.launch_site!.site_id }}</p>
+            <p><strong>Site Name:</strong> {{ mission!.launch_site!.site_name }}</p>
+            <p><strong>Site Name (Long):</strong> {{ mission!.launch_site!.site_name_long }}</p>
+        </div>
+    </div>
+</div>
