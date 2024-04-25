@@ -1,3 +1,4 @@
+
 // app.module.ts
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -10,6 +11,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app.routes';
 import { CommonModule } from '@angular/common';
 import { MissiondetailsComponent } from './missiondetails/missiondetails.component';
+
 import { MissionfilterComponent } from './missionfilter/missionfilter.component';
 
 @NgModule({
@@ -17,6 +19,7 @@ import { MissionfilterComponent } from './missionfilter/missionfilter.component'
     AppComponent,
     MissionlistComponent,
     MissiondetailsComponent,
+
     MissionfilterComponent,
   ],
   imports: [
@@ -28,6 +31,7 @@ import { MissionfilterComponent } from './missionfilter/missionfilter.component'
   
   ],
   providers: [SpaceXService],
+
   bootstrap: [AppComponent]
 })
 export class AppModule { }

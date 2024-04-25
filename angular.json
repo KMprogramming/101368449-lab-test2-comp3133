@@ -3,9 +3,19 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+<<<<<<< HEAD
     "101368449-lab-test2-COMP3133": {
       "projectType": "application",
       "schematics": {},
+=======
+    "101368449-lab-test2-comp3133": {
+      "projectType": "application",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
+>>>>>>> 0effcecf7b82d55c891014998116a6ce47795d79
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -20,12 +30,21 @@
               "zone.js"
             ],
             "tsConfig": "tsconfig.app.json",
+<<<<<<< HEAD
+=======
+            "inlineStyleLanguage": "scss",
+>>>>>>> 0effcecf7b82d55c891014998116a6ce47795d79
             "assets": [
               "src/favicon.ico",
               "src/assets"
             ],
             "styles": [
+<<<<<<< HEAD
               "src/styles.css"
+=======
+              "@angular/material/prebuilt-themes/indigo-pink.css",
+              "src/styles.scss"
+>>>>>>> 0effcecf7b82d55c891014998116a6ce47795d79
             ],
             "scripts": [],
             "server": "src/main.server.ts",
@@ -62,10 +81,17 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
+<<<<<<< HEAD
               "buildTarget": "101368449-lab-test2-COMP3133:build:production"
             },
             "development": {
               "buildTarget": "101368449-lab-test2-COMP3133:build:development"
+=======
+              "buildTarget": "101368449-lab-test2-comp3133:build:production"
+            },
+            "development": {
+              "buildTarget": "101368449-lab-test2-comp3133:build:development"
+>>>>>>> 0effcecf7b82d55c891014998116a6ce47795d79
             }
           },
           "defaultConfiguration": "development"
@@ -73,7 +99,11 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
+<<<<<<< HEAD
             "buildTarget": "101368449-lab-test2-COMP3133:build"
+=======
+            "buildTarget": "101368449-lab-test2-comp3133:build"
+>>>>>>> 0effcecf7b82d55c891014998116a6ce47795d79
           }
         },
         "test": {
@@ -84,12 +114,21 @@
               "zone.js/testing"
             ],
             "tsConfig": "tsconfig.spec.json",
+<<<<<<< HEAD
+=======
+            "inlineStyleLanguage": "scss",
+>>>>>>> 0effcecf7b82d55c891014998116a6ce47795d79
             "assets": [
               "src/favicon.ico",
               "src/assets"
             ],
             "styles": [
+<<<<<<< HEAD
               "src/styles.css"
+=======
+              "@angular/material/prebuilt-themes/indigo-pink.css",
+              "src/styles.scss"
+>>>>>>> 0effcecf7b82d55c891014998116a6ce47795d79
             ],
             "scripts": []
           }
@@ -98,6 +137,10 @@
     }
   },
   "cli": {
+<<<<<<< HEAD
     "analytics": "bede8207-e7c1-452c-b132-f3868ce283c8"
+=======
+    "analytics": false
+>>>>>>> 0effcecf7b82d55c891014998116a6ce47795d79
   }
 }

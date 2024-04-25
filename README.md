@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # 101368449LabTest2COMP3133
+=======
+# 101368449LabTest2Comp3133
+>>>>>>> 0effcecf7b82d55c891014998116a6ce47795d79
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.5.
 

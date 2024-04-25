@@ -7,15 +7,28 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
+<<<<<<< HEAD
     "serve:ssr:101368449-lab-test2-COMP3133": "node dist/101368449-lab-test2-comp3133/server/server.mjs"
+=======
+    "serve:ssr:101368449-lab-test2-comp3133": "node dist/101368449-lab-test2-comp3133/server/server.mjs"
+>>>>>>> 0effcecf7b82d55c891014998116a6ce47795d79
   },
   "private": true,
   "dependencies": {
     "@angular/animations": "^17.3.0",
+<<<<<<< HEAD
     "@angular/common": "^17.3.0",
     "@angular/compiler": "^17.3.0",
     "@angular/core": "^17.3.0",
     "@angular/forms": "^17.3.0",
+=======
+    "@angular/cdk": "^17.3.5",
+    "@angular/common": "^17.3.5",
+    "@angular/compiler": "^17.3.0",
+    "@angular/core": "^17.3.0",
+    "@angular/forms": "^17.3.0",
+    "@angular/material": "^17.3.5",
+>>>>>>> 0effcecf7b82d55c891014998116a6ce47795d79
     "@angular/platform-browser": "^17.3.0",
     "@angular/platform-browser-dynamic": "^17.3.0",
     "@angular/platform-server": "^17.3.0",
@@ -41,4 +54,8 @@
     "karma-jasmine-html-reporter": "~2.1.0",
     "typescript": "~5.4.2"
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 0effcecf7b82d55c891014998116a6ce47795d79

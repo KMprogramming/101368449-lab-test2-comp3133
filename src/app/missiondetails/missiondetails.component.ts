@@ -1,3 +1,4 @@
+
 //Karl Macayan 101368449
 
 
@@ -7,9 +8,11 @@ import { SpaceXService } from '../spacex-api.service';
 import { Launch } from '../launch.interface';
 import { NgIf } from '@angular/common';
 
+
 @Component({
   selector: 'app-missiondetails',
   templateUrl: './missiondetails.component.html',
+
   standalone: true,
   styleUrls: ['./missiondetails.component.scss'],
   imports: [ NgIf]
